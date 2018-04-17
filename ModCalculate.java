@@ -13,11 +13,11 @@ public class ModCalculate {
 
 	public static void main(String[] args) {
 		ModCalculate mod = new ModCalculate();
-		System.out.println("ÆÆ½âa,bÒÑÖªÊ±µÄ·ÂÉäÃÜÂë" );
+		System.out.println("ç ´è§£a,bå·²çŸ¥æ—¶çš„ä»¿å°„å¯†ç " );
 		Scanner scn = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÃÜÎÄÎÄ¼ş");
+		System.out.println("è¯·è¾“å…¥å¯†æ–‡æ–‡ä»¶");
 		String x = scn.nextLine();
-		System.out.println("Çë·Ö±ğÊäÈëa£¬bµÄÖµ");
+		System.out.println("è¯·åˆ†åˆ«è¾“å…¥aï¼Œbçš„å€¼");
 		int a = scn.nextInt();
 		int b = scn.nextInt();
 		mod.Calculate(x,a,b);

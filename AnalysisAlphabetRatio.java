@@ -7,13 +7,13 @@ public class AnalysisAlphabetRatio {
 	public static void main(String[] args) {
 		AnalysisAlphabetRatio aar = new AnalysisAlphabetRatio();
 		Scanner scn = new Scanner(System.in);
-		System.out.println("ÊäÈëĞèÒªÆÆÒëµÄ×Ö·û´®");
+		System.out.println("è¾“å…¥éœ€è¦ç ´è¯‘çš„å­—ç¬¦ä¸²");
 		String str = scn.nextLine();
 		aar.calRatio(str);
 	}
 	
 	/**
-	 * ×ÖÄ¸³öÏÖµÄ¸ÅÂÊ¼ÆËãº¯Êı
+	 * å­—æ¯å‡ºç°çš„æ¦‚ç‡è®¡ç®—å‡½æ•°
 	 * @param str
 	 */
 	
@@ -22,7 +22,7 @@ public class AnalysisAlphabetRatio {
 		float ratio[] = new float[26];
 		
 		/**
-		 * ±éÀú¼ÆËãÃ¿¸ö×ÖÄ¸³öÏÖµÄ´ÎÊı
+		 * éå†è®¡ç®—æ¯ä¸ªå­—æ¯å‡ºç°çš„æ¬¡æ•°
 		 */
 		
 		for (int i = 0; i < str.length(); i++) {
@@ -33,7 +33,7 @@ public class AnalysisAlphabetRatio {
 		}
 		
 		/**
-		 * ±éÀú¼ÆËãÃ¿¸ö×ÖÄ¸³öÏÖµÄ¸ÅÂÊ
+		 * éå†è®¡ç®—æ¯ä¸ªå­—æ¯å‡ºç°çš„æ¦‚ç‡
 		 */
 		
 		for (int i = 0; i < 26; i++) {
@@ -41,11 +41,11 @@ public class AnalysisAlphabetRatio {
 		}
 		
 		/**
-		 * ±éÀúÊä³ö×ÖÄ¸³öÏÖµÄ¸ÅÂÊ
+		 * éå†è¾“å‡ºå­—æ¯å‡ºç°çš„æ¦‚ç‡
 		 */
 		
 		for (int i = 0; i < 26; i++) {
-			System.out.println("×ÖÄ¸"+(char)(65+i)+"µÄ¸ÅÂÊ="+ratio[i]);
+			System.out.println("å­—æ¯"+(char)(65+i)+"çš„æ¦‚ç‡="+ratio[i]);
 		}
 		bubbleSort(ratio);
 		for (int i = 0; i < ratio.length; i++) {
